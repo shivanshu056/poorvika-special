@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little World — Shivanshu & Poorvika</title>
+<style>
+:root{--pink:#ff6fae;--deep:#9b4d96;--lav:#b8a1ff;--cream:#fff8fc;--ink:#50334d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:linear-gradient(135deg,#fff4fa,#f5f0ff 55%,#eafaff);overflow-x:hidden}
+nav{position:sticky;top:0;z-index:10;background:#ffffffd9;backdrop-filter:blur(12px);display:flex;gap:8px;overflow-x:auto;padding:10px 12px;border-bottom:1px solid #f4d8e9}
+nav a{white-space:nowrap;text-decoration:none;color:#8d5480;font-size:13px;font-weight:700;padding:8px 12px;border-radius:30px;background:#fff0f7}
+nav a:hover{background:#ffd9eb}
+.hero{min-height:90vh;display:grid;place-items:center;text-align:center;padding:50px 20px;position:relative}
+.hero-card,.card{background:#ffffffc9;border:1px solid #fff;box-shadow:0 18px 55px #a66b9820;border-radius:28px;padding:clamp(22px,5vw,42px);max-width:850px;margin:auto}
+.kicker{letter-spacing:3px;text-transform:uppercase;font-size:12px;color:#b05b91;font-weight:800}
+h1{font-size:clamp(42px,9vw,82px);line-height:1.02;margin:14px 0;color:#9b4d96}
+h2{font-size:clamp(27px,5vw,42px);margin:0 0 12px;color:#9b4d96}
+p{font-size:17px;line-height:1.75}
+.sub{font-size:clamp(17px,3vw,22px);color:#875e85}
+.btn{border:0;border-radius:30px;padding:13px 21px;background:linear-gradient(100deg,#ff77ad,#aa8cff);color:white;font-weight:800;font-size:15px;cursor:pointer;box-shadow:0 8px 20px #c77bb544;margin:7px}
+.btn.alt{background:#fff0f7;color:#a34e83}
+section{padding:65px 18px;scroll-margin-top:65px}
+.section-inner{max-width:920px;margin:auto}
+.center{text-align:center}.tag{display:inline-block;padding:7px 13px;background:#fff0f7;border-radius:30px;color:#a45185;font-size:12px;font-weight:800;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:15px;margin-top:24px}
+.tile{background:#fff;border:1px solid #ffe4f1;border-radius:22px;padding:20px;box-shadow:0 8px 24px #a66b9810}
+.tile .emoji{font-size:35px}.tile h3{color:#9b4d96;margin:9px 0 5px}
+.big-emoji{font-size:70px;display:block;margin:10px}
+.gift{font-size:54px;cursor:pointer;transition:transform .3s;display:inline-block}.gift:hover{transform:rotate(-10deg) scale(1.15)}
+.reveal{display:none;background:#fff0f7;border-radius:20px;padding:18px;margin-top:12px;animation:pop .4s ease}
+.reveal.show{display:block}
+footer{text-align:center;padding:45px 20px;color:#98628c}
+.heart{position:fixed;bottom:-30px;pointer-events:none;z-index:0;animation:floatUp linear forwards;opacity:.75}
+.spark{position:absolute;animation:twinkle 2s infinite alternate}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@keyframes twinkle{from{opacity:.35;transform:scale(.8)}to{opacity:1;transform:scale(1.2)}}
+@keyframes pop{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes bob{50%{transform:translateY(-12px)}}
+.teddy{font-size:82px;display:inline-block;animation:bob 2s infinite}
+.progress{height:8px;background:#f7d9e9;border-radius:20px;overflow:hidden;margin:20px auto;max-width:300px}.progress span{display:block;width:100%;height:100%;background:linear-gradient(90deg,#ff79b2,#a78bfa)}
+.note{font-size:13px;color:#9b7894}
+input{padding:13px 16px;border:2px solid #f5cfe2;border-radius:15px;font-size:16px;width:min(100%,320px);outline:none}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#754b75;color:white;padding:12px 20px;border-radius:30px;display:none;z-index:20}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">Home</a><a href="#story">Story</a><a href="#vibe">Our vibe</a><a href="#gifts">Gifts</a><a href="#promises">Promises</a><a href="#letter">Letter</a><a href="#quiz">Quiz</a><a href="#final">Final surprise</a>
+</nav>
+<header class="hero" id="home">
+<div class="spark" style="top:13%;left:12%;font-size:28px">✦</div><div class="spark" style="top:22%;right:13%;font-size:35px">✨</div>
+<div class="hero-card">
+<div class="kicker">A tiny website for a very special friendship</div>
+<h1>Our Little<br>World 💗</h1>
+<p class="sub">SHIVANSHU <span style="color:#ff75aa">×</span> POORVIKA</p>
+<p>Some people make ordinary days feel a little more magical. This little corner of the internet is made to celebrate our friendship.</p>
+<a class="btn" href="#story">Enter our world ✨</a><button class="btn alt" onclick="sprinkle()">Make it sparkle</button>
+<p class="note">Made with smiles, kindness and a whole lot of pink.</p>
+</div></header>
+
+<!-- 30 friendly chapters -->
+<section id="story"><div class="section-inner center"><span class="tag">01 · THE BEGINNING</span><h2>Every friendship has a story 🌷</h2><p>Ours doesn't need to be a movie to be special. The little chats, random jokes, silly moments and everyday conversations are what make it ours.</p><div class="big-emoji">📖</div><p><b>Chapter 1:</b> Two people, one friendship, and countless little moments still waiting to happen.</p></div></section>
+<section id="vibe"><div class="section-inner center"><span class="tag">02 · OUR VIBE</span><h2>Different moods, same team 🫶</h2><div class="grid">
+<div class="tile"><div class="emoji">😂</div><h3>Laughing mode</h3><p>Random jokes that make no sense to anyone else.</p></div><div class="tile"><div class="emoji">🤝</div><h3>Support mode</h3><p>Being there, listening and cheering each other on.</p></div><div class="tile"><div class="emoji">🌈</div><h3>Good-vibes mode</h3><p>Making a normal day feel brighter.</p></div></div></div></section>
+<section><div class="section-inner center"><span class="tag">03 · LITTLE THINGS</span><h2>It's the little things 💌</h2><p>A message, a funny reel, a shared laugh, or simply asking “kya hua?” — small things can mean a lot.</p><div class="big-emoji">💬</div></div></section>
+<section><div class="section-inner center"><span class="tag">04 · FRIENDSHIP FORMULA</span><h2>Our friendship formula 🧪</h2><div class="grid"><div class="tile"><h3>40% 😂</h3><p>Comedy and nonsense</p></div><div class="tile"><h3>30% 💗</h3><p>Care and kindness</p></div><div class="tile"><h3>20% ✨</h3><p>Random surprises</p></div><div class="tile"><h3>10% 🤦</h3><p>“Tu pagal hai” moments</p></div></div></div></section>
+<section><div class="section-inner center"><span class="tag">05 · COMPLIMENT CARD</span><h2>A little reminder for Poorvika 🌸</h2><div class="card"><div class="big-emoji">🌻</div><p>Keep being your own wonderful self. Your smile, your energy and the way you make moments memorable deserve to be celebrated.</p></div></div></section>
+<section><div class="section-inner center"><span class="tag">06 · FRIENDSHIP WEATHER</span><h2>Today's forecast ☀️</h2><div class="big-emoji">🌤️</div><p>100% chance of laughter, scattered silly jokes, and a warm breeze of friendship.</p></div></section>
+<section><div class="section-inner center"><span class="tag">07 · MINI TEDDY</span><h2>A teddy delivery! 🧸</h2><div class="teddy">🧸</div><p>This teddy has one job: remind Poorvika that a friend is cheering for her.</p></div></section>
+<section><div class="section-inner center"><span class="tag">08 · ROSE GARDEN</span><h2>A bouquet just for you 🌹</h2><div class="big-emoji">💐</div><p>One virtual bouquet, zero watering needed. May your days bloom with happiness.</p></div></section>
+<section><div class="section-inner center"><span class="tag">09 · STAR NOTE</span><h2>You are a star ⭐</h2><p>Never let one bad day make you forget how bright you can shine.</p><div class="big-emoji">🌟✨🌟</div></div></section>
+<section><div class="section-inner center"><span class="tag">10 · FRIENDSHIP RULES</span><h2>Our tiny rulebook 📜</h2><div class="grid"><div class="tile">Rule 1: Respect always.</div><div class="tile">Rule 2: No pressure to reply instantly.</div><div class="tile">Rule 3: Be honest and kind.</div><div class="tile">Rule 4: Laugh often.</div></div></div></section>
+<section id="gifts"><div class="section-inner center"><span class="tag">11 · OPEN YOUR GIFTS</span><h2>Tap a gift box 🎁</h2><p>Three tiny surprises are waiting. Tap each one!</p><div class="grid">
+<div class="tile"><span class="gift" onclick="reveal('gift1')">🎁</span><h3>Gift 1</h3><div id="gift1" class="reveal">💖 A pocketful of good vibes for you!</div></div>
+<div class="tile"><span class="gift" onclick="reveal('gift2')">🎀</span><h3>Gift 2</h3><div id="gift2" class="reveal">🌷 A reminder: you deserve respect, happiness and kind people.</div></div>
+<div class="tile"><span class="gift" onclick="reveal('gift3')">🧁</span><h3>Gift 3</h3><div id="gift3" class="reveal">🍓 One imaginary cupcake, specially reserved for Poorvika!</div></div></div></div></section>
+<section><div class="section-inner center"><span class="tag">12 · SECRET BOX</span><h2>A secret message 🔐</h2><button class="btn" onclick="reveal('secret')">Unlock message</button><div id="secret" class="reveal">Psst… this website is proof that you have a friend who wanted to make you smile today. 💗</div></div></section>
+<section><div class="section-inner center"><span class="tag">13 · HAPPY PLACE</span><h2>Our happy-place energy 🎡</h2><p>Imagine a place full of music, snacks, silly photos, zero stress and endless laughter.</p><div class="big-emoji">🎠🍿🎶</div></div></section>
+<section><div class="section-inner center"><span class="tag">14 · HIGH FIVE</span><h2>Virtual high-five! ✋</h2><button class="btn" onclick="toast('HIGH FIVE! ✋ You just made the friendship meter sparkle!')">Tap for high-five</button></div></section>
+<section><div class="section-inner center"><span class="tag">15 · KINDNESS COUPON</span><h2>One free kindness coupon 🎟️</h2><div class="card"><h3>GOOD FOR ONE</h3><p>Cheering you up, listening to you, or reminding you that you matter.</p><div class="big-emoji">🎟️</div><p class="note">No expiry date. No conditions.</p></div></div></section>
+<section id="promises"><div class="section-inner center"><span class="tag">16 · FRIENDSHIP PROMISES</span><h2>Promises, not pressure 🤍</h2><div class="grid"><div class="tile">I’ll respect your boundaries.</div><div class="tile">I’ll celebrate your wins.</div><div class="tile">I’ll listen without judging.</div><div class="tile">I’ll keep our friendship genuine.</div></div></div></section>
+<section><div class="section-inner center"><span class="tag">17 · MOTIVATION</span><h2>For your tough days 🌻</h2><p>Take a breath. You don't have to figure everything out today. One step at a time is still progress.</p><div class="big-emoji">🌱</div></div></section>
+<section><div class="section-inner center"><span class="tag">18 · COMPLIMENT MACHINE</span><h2>Need a compliment? 💫</h2><button class="btn" onclick="compliment()">Give me one!</button><p id="complimentText" class="sub"></p></div></section>
+<section><div class="section-inner center"><span class="tag">19 · MINI QUIZ</span><h2>Friendship check 😄</h2><p>What makes a friendship strong?</p><button class="btn alt" onclick="toast('Good guess!')">Only memes</button><button class="btn alt" onclick="toast('Exactly! Kindness, trust and respect. 💗')">Trust + respect + fun</button><button class="btn alt" onclick="toast('Not quite — kindness matters too!')">Only matching outfits</button></div></section>
+<section><div class="section-inner center"><span class="tag">20 · PHOTO MOMENT</span><h2>A place for memories 📸</h2><div class="tile"><div class="big-emoji">🖼️</div><p>Add your favourite friendship photo here later, if you both are comfortable sharing it.</p><p class="note">This starter website does not upload or store photos.</p></div></div></section>
+<section><div class="section-inner center"><span class="tag">21 · MUSIC MOOD</span><h2>Soundtrack of smiles 🎵</h2><p>Play a favourite friendship song from your own music app and let this page be the album cover.</p><div class="big-emoji">🎧</div></div></section>
+<section><div class="section-inner center"><span class="tag">22 · BUTTERFLIES</span><h2>Little butterflies 🦋</h2><div class="big-emoji">🦋🌸🦋</div><p>May good things find you, gently and often.</p></div></section>
+<section><div class="section-inner center"><span class="tag">23 · CONFETTI</span><h2>Celebrate the little wins 🎉</h2><button class="btn" onclick="sprinkle()">Launch confetti hearts</button><p>Every small achievement deserves a little celebration.</p></div></section>
+<section><div class="section-inner center"><span class="tag">24 · FRIENDSHIP METER</span><h2>Good-vibes meter 💗</h2><div class="progress"><span></span></div><p>Currently full of kindness and positive energy.</p></div></section>
+<section><div class="section-inner center"><span class="tag">25 · NOTE TO SELF</span><h2>Don't forget this ✨</h2><p>You don't need to be perfect to be appreciated. Just be yourself, keep growing and be kind to yourself.</p></div></section>
+<section><div class="section-inner center"><span class="tag">26 · THANK YOU</span><h2>Thanks for being you 🥹</h2><p>Thank you for the conversations, laughs and the little moments that make friendship feel special.</p><div class="big-emoji">💞</div></div></section>
+<section><div class="section-inner center"><span class="tag">27 · FRIENDSHIP CERTIFICATE</span><h2>Officially certified! 🏅</h2><div class="card"><div class="big-emoji">🏆</div><h3>BEST-VIBES FRIENDSHIP AWARD</h3><p>Presented to <b>Poorvika</b> for being an important part of this little friendship story.</p><p>Signed with a smile — <b>Shivanshu</b></p></div></div></section>
+<section><div class="section-inner center"><span class="tag">28 · ENVELOPE</span><h2>Open your letter ✉️</h2><button class="btn" onclick="reveal('letterInside')">Open envelope</button><div id="letterInside" class="reveal">Dear Poorvika, I hope this little surprise brings a smile to your face. No big speech — just a reminder that genuine friendship is something worth appreciating. Stay happy and keep shining. — Shivanshu 💗</div></div></section>
+<section id="letter"><div class="section-inner center"><span class="tag">29 · FROM SHIVANSHU</span><h2>A little letter 💌</h2><div class="card"><p>Dear Poorvika,</p><p>I made this small world to celebrate our friendship. It has silly gifts, cute animations and lots of pink because a normal “thank you” felt too ordinary. I hope you always feel respected, valued and free to be yourself. Here's to more laughs and good memories — with no pressure, just friendship.</p><p>— Shivanshu</p></div></div></section>
+<section id="quiz"><div class="section-inner center"><span class="tag">30 · THE LAST PAGE</span><h2>One last question 🌷</h2><p>Ready for the final surprise?</p><button class="btn" onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})">YES, SHOW ME! 💗</button></div></section>
+<section id="final"><div class="section-inner center"><span class="tag">BONUS · FINAL SURPRISE</span><h2>Our Little World continues…</h2><div class="big-emoji">💗🧸🌹🎁✨</div><p>30 little chapters, one simple message: <b>your friendship is appreciated.</b></p><button class="btn" onclick="sprinkle();toast('A little happiness sent your way, Poorvika! 💕')">Send a smile 💌</button><p class="note">Made by Shivanshu · For Poorvika · Friendship edition</p></div></section>
+<footer>Made with 💗 and a little bit of HTML magic.<br>Be kind. Be respectful. Keep the friendship real.</footer>
+<div id="toast"></div>
+<script>
+function reveal(id){document.getElementById(id).classList.toggle('show')}
+function toast(msg){let t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display='none',2600)}
+function sprinkle(){for(let i=0;i<24;i++){let e=document.createElement('div');e.className='heart';e.textContent=['💗','💖','✨','🌸','💕'][Math.floor(Math.random()*5)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*22)+'px';e.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),7500)}}
+const compliments=['Your smile deserves its own sunshine. ☀️','You bring your own kind of sparkle. ✨','You are more capable than you think. 🌷','Never underestimate your kindness. 💗','Keep being wonderfully you. 🦋'];
+function compliment(){document.getElementById('complimentText').textContent=compliments[Math.floor(Math.random()*compliments.length)]}
+setInterval(()=>{if(Math.random()>.35)sprinkleOne()},2200);
+function sprinkleOne(){let e=document.createElement('div');e.className='heart';e.textContent=['♡','✦','💗'][Math.floor(Math.random()*3)];e.style.left=Math.random()*100+'vw';e.style.fontSize='20px';e.style.animationDuration='6s';document.body.appendChild(e);setTimeout(()=>e.remove(),6100)}
+</script>
+</body></html>
